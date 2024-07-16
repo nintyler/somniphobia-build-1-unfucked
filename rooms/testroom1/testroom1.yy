@@ -18,11 +18,17 @@
     {"name":"inst_2FAF7857","path":"rooms/testroom1/testroom1.yy",},
     {"name":"inst_54C1B5D7","path":"rooms/testroom1/testroom1.yy",},
     {"name":"inst_7E494A2","path":"rooms/testroom1/testroom1.yy",},
+    {"name":"inst_5A3F0CD1","path":"rooms/testroom1/testroom1.yy",},
+    {"name":"inst_75129AC3","path":"rooms/testroom1/testroom1.yy",},
+    {"name":"inst_55413814","path":"rooms/testroom1/testroom1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"texting","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_7E494A2","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E494A2","objectId":{"name":"obj_textbox_open","path":"objects/obj_textbox_open/obj_textbox_open.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.65625,"scaleY":1.6875,"x":542.0,"y":222.0,},
+        {"$GMRInstance":"","%Name":"inst_5A3F0CD1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A3F0CD1","objectId":{"name":"obj_ilovecum","path":"objects/obj_ilovecum/obj_ilovecum.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":960.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_75129AC3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75129AC3","objectId":{"name":"obj_ilovecum","path":"objects/obj_ilovecum/obj_ilovecum.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":1088.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_55413814","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55413814","objectId":{"name":"obj_ilovecum","path":"objects/obj_ilovecum/obj_ilovecum.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":7.0,"x":1024.0,"y":96.0,},
       ],"layers":[],"name":"texting","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"actual_collision","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_10739040","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10739040","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.53125,"scaleY":0.5625,"x":544.0,"y":224.0,},
