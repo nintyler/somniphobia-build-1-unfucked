@@ -6,8 +6,6 @@ var runkey = keyboard_check(vk_lshift);
 
 var _walkSpeed = 3;
 var _sprintSpeed = 5
-var _walkSpeedD = _walkSpeed * 0.9;
-var _sprintSpeedD = _sprintSpeed * 0.9
 
 var _goingDiagonally = 0
 
@@ -16,20 +14,46 @@ if (left || right) && (up || down)
 
 if keyboard_check_direct(runkey)
 {
-	if !(_goingDiagonally)
-		spd = _sprintSpeed;
-	else
-	    spd = _sprintSpeedD;
-} else 
+	spd = _sprintSpeed;
+} 
+else 
 {
-	if !(_goingDiagonally)
-		spd = _walkSpeed;
-	else
-	    spd = _walkSpeedD;
+	spd = _walkSpeed;
 }
+
 show_debug_message(string(xspd) + " " + string(yspd))
-xspd = (right - left) * spd;
-yspd = (down - up) * spd;
+
+if !_goingDiagonally
+{
+	xspd = (right - left) * spd;
+	yspd = (down - up) * spd;
+}
+else
+{
+	var _angleHor = (right - left) 
+	var _angleVer = (down - up)
+	if _angleHor && _angleVer
+	{
+		xspd = lengthdir_x(spd, 315)
+		yspd = lengthdir_y(spd, 315)
+	}
+	if !_angleHor && _angleVer
+	{
+		xspd = lengthdir_x(spd, 225)
+		yspd = lengthdir_y(spd, 225)
+	}
+	if _angleHor && !_angleVer
+	{
+		xspd = lengthdir_x(spd, 45)
+		yspd = lengthdir_y(spd, 45)
+	}
+	if !_angleHor && !_angleVer
+	{
+		xspd = lengthdir_x(spd, 135)
+		yspd = lengthdir_y(spd, 135)
+	}
+	
+}
 
 
 
