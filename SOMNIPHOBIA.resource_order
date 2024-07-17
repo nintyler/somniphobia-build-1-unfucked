@@ -40,6 +40,7 @@
     {"name":"spr_fatigue","order":4,"path":"sprites/spr_fatigue/spr_fatigue.yy",},
     {"name":"spr_ilovecum","order":5,"path":"sprites/spr_ilovecum/spr_ilovecum.yy",},
     {"name":"spr_khal_down","order":1,"path":"sprites/spr_khal_down/spr_khal_down.yy",},
+    {"name":"spr_khal_mask","order":15,"path":"sprites/spr_khal_mask/spr_khal_mask.yy",},
     {"name":"spr_khal_right","order":12,"path":"sprites/spr_khal_right/spr_khal_right.yy",},
     {"name":"spr_khal_up","order":2,"path":"sprites/spr_khal_up/spr_khal_up.yy",},
     {"name":"spr_lemonbowl","order":8,"path":"sprites/spr_lemonbowl/spr_lemonbowl.yy",},

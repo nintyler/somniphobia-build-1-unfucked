@@ -1,1 +1,1 @@
-old_type_text = type_text;
+prevletters = letters;

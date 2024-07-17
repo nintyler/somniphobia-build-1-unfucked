@@ -5,7 +5,6 @@ box_x = camera_get_view_x(view_camera[0]);
 box_y = camera_get_view_y(view_camera[0]) + 300;
 
 
-
 if (setup == false) {
 	setup = true;
 	obj_khal.can_move = false;
@@ -17,14 +16,16 @@ if (setup == false) {
 	page_num = array_length(text)
 	
 	for (var i = 0; i < page_num; i++) {
-		text_length[i] = string_length(text[i]);
+		text_length[i] = string_length(text[i][0]);
 		text_x_offest[i] = 39;
 	}
 }
 
-if type_text < text_length[page] {
-	type_text += text_spd;
-	type_text = clamp(type_text, 0, text_length[page]);
+if type_text < text_length[page]
+{
+	type_text += text[page][1];
+	type_text = clamp(type_text, 0, text_length[page]);	
+	letters = round(type_text)
 	
 }
 
@@ -49,7 +50,7 @@ txtb_spr_h = sprite_get_height(txtb_spr);
 
 draw_sprite_ext(txtb_spr, txtb_img, box_x + text_x_offest[page], box_y, txtb_width / txtb_spr_w, txtb_height / txtb_spr_h, 0, c_white, 1);
 
-var _drawtext = string_copy(text[page], 1, type_text);
+var _drawtext = string_copy(text[page][0], 1, type_text);
 draw_text_ext(box_x + text_x_offest[page] + border, box_y + border, _drawtext, line_sep, line_width);
 		
 			

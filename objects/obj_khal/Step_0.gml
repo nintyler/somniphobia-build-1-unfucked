@@ -1,7 +1,7 @@
-var left = keyboard_check(ord("A"));
-var down = keyboard_check(ord("S"));
-var up = keyboard_check(ord("W"));
-var right = keyboard_check(ord("D"));
+var left = keyboard_check(vk_left);
+var down = keyboard_check(vk_down);
+var up = keyboard_check(vk_up);
+var right = keyboard_check(vk_right);
 var runkey = keyboard_check(vk_lshift);
 
 var _walkSpeed = 3;
@@ -30,6 +30,7 @@ if !_goingDiagonally
 }
 else
 {
+	/*
 	var _angleHor = (right - left) 
 	var _angleVer = (down - up)
 	if _angleHor && _angleVer
@@ -52,7 +53,9 @@ else
 		xspd = lengthdir_x(spd, 135)
 		yspd = lengthdir_y(spd, 135)
 	}
-	
+	*/
+	xspd = (right - left) * spd;
+	yspd = (down - up) * spd;
 }
 
 
@@ -69,12 +72,19 @@ if place_meeting(x, y + yspd, obj_wall)
 }
 
 //movement shit
-scr_setsprite();
-if (can_move) {
+
+
+if (can_move) 
+{
+	scr_setsprite();
 	if (xspd != 0 or yspd != 0)
 	{
+		timer += 0.015
 		if (moving == false)
+		{
 		    image_index = 1
+			timer = 0
+		}
 		image_speed = 0.8 + (spd/4);
 		moving = true;
 	} else
@@ -82,9 +92,15 @@ if (can_move) {
 		image_speed = 0;
 		image_index = 0;
 		moving = false;
+		
 	}
 	if (sprite_index != _sprite)
 		image_index = 1;
 	x += xspd;
 	y += yspd;
+}
+else
+{
+   image_index = 0
+   image_speed = 0
 }

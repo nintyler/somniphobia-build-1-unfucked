@@ -8,13 +8,17 @@ txtb_img = 0;
 txtb_spr_w = 0;
 txtb_spr_h = 0;
 txtb_spd = 0.5;
+dir = 0
 //text
 page = 0;
 page_num = 0;
-text[0] = "* A lemon bowl.";
+text[0][0] = "* A lemon bowl.";
+text[0][1] = 0.5;
 
-text_length[0] = string_length(text[0]);
+text_length[0] = string_length(text[0][0]);
 type_text = 0;
+letters = 0;
+prevletters = 0;
 old_type_text = 0;
 text_spd = 0.8;
 frame = 0;
