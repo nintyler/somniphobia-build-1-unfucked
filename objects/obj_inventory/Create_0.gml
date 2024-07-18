@@ -12,10 +12,18 @@ depth = -100
 items = 
 [
 	["Kick", spr_test, "6 Damage, 0.25s Cooldown", "Make them bite the dust."],
-	["sex1", spr_test, "Stats", "Description"],
+	["placeHolder", spr_test, "Stats", "Description"],
+	["placeHolder1", spr_test, "Stats", "Description"],
+	["placeHolder2", spr_test, "Stats", "Description"],
+	["placeHolder3", spr_test, "Stats", "Description"],
+	["placeHolder4", spr_test, "Stats", "Description"],
 ]
 
 itemCount = array_length(items)
 selectedItem = 0
 itemDistance = 64
 
+global.deck =
+[
+    
+]

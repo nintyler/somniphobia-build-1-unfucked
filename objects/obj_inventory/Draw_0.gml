@@ -18,19 +18,29 @@ var _currentItem = array_get(items, selectedItem)
 var _currentItemName = _currentItem[0]
 var _currentItemStats = _currentItem[2]
 var _currentItemDesc = _currentItem[3]
-
-draw_text(box_x+34, box_y+240, _currentItemName)
-draw_text(box_x+34, box_y+260, _currentItemStats)
-draw_text(box_x+34, box_y+280, _currentItemDesc)
+draw_set_font(fnt_default);
+draw_text(box_x+36, box_y+230, _currentItemName)
+draw_text(box_x+36, box_y+250, _currentItemStats)
+draw_text(box_x+36, box_y+270, _currentItemDesc)
 
 for (var i = 0; i <= (itemCount-1); i += 1)
 {
 	 draw_set_color(c_white)
 	var xx = box_x + (itemDistance * (i + 1))
 	var yy = box_y + txtb_height/2
-	if !(i == selectedItem)
-		draw_sprite_ext(items[i][1], 0, xx, yy, 1, 1, image_angle, c_white, 1)
-	else
-	    draw_sprite_ext(items[i][1], 0, xx, yy, 1, 1, image_angle, c_green, 1)
-	
+
+		if !(i == selectedItem)
+		{
+			if !(array_contains(global.deck, items[i][0]))
+				draw_sprite_ext(items[i][1], 0, xx, yy, 1, 1, image_angle, c_white, 0.5)
+			else
+				draw_sprite_ext(items[i][1], 0, xx, yy, 1, 1, image_angle, c_red, 0.5)
+		}
+		else
+		{
+			if !(array_contains(global.deck, items[i][0]))
+			  draw_sprite_ext(items[i][1], 0, xx, yy, 1, 1, image_angle, c_white, 1)
+			else
+				draw_sprite_ext(items[i][1], 0, xx, yy, 1, 1, image_angle, c_red, 1)
+		}	
 }
