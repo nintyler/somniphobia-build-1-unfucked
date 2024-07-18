@@ -3,6 +3,7 @@ var down = keyboard_check(vk_down);
 var up = keyboard_check(vk_up);
 var right = keyboard_check(vk_right);
 var runkey = keyboard_check(vk_lshift);
+var inventory = keyboard_check_pressed(ord("C"))
 
 var _walkSpeed = 3;
 var _sprintSpeed = 5
@@ -103,4 +104,11 @@ else
 {
    image_index = 0
    image_speed = 0
+}
+if inventory
+{
+	if !(instance_exists(obj_inventory)) && can_move
+		instance_create_depth(x, y, -500, obj_inventory)
+	else if !can_move
+	    instance_destroy(obj_inventory)
 }

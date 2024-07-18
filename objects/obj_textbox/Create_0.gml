@@ -10,7 +10,7 @@ txtb_spr_h = 0;
 txtb_spd = 0.5;
 character = 0;
 
-characterspr = spr_test;
+characterspr = spr_portrait_placeholder;
 characterspr_width = sprite_get_width(characterspr);
 characterspr_height = sprite_get_height(characterspr);
 icondistance = 128;

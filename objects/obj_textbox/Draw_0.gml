@@ -52,7 +52,7 @@ var characterx_offset = box_x + text_x_offest[page] + border;
 var charactery_offset = box_y + border;
 draw_sprite_ext(txtb_spr, txtb_img, box_x + text_x_offest[page], box_y, txtb_width / txtb_spr_w, txtb_height / txtb_spr_h, 0, c_white, 1);
 if (character)
-     draw_sprite(characterspr, 0, characterx_offset + icondistance/2,  charactery_offset + txtb_height/2 - border)
+     draw_sprite_ext(characterspr, 0, characterx_offset + icondistance/2,  charactery_offset + txtb_height/2 - border, 0.5, 0.5, image_angle, c_white, 1)
 var _drawtext = string_copy(text[page][0], 1, type_text);
 
 if !(character)
