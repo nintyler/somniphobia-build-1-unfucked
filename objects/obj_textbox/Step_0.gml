@@ -11,7 +11,7 @@ if prevletters != letters && string_char_at(text[page][0], type_text) != " "
 		audio_play_sound(txt_snd, 10, false);
 	}
 }
-
+/*
 with (obj_khal)
 {
 	switch other.dir
@@ -30,3 +30,4 @@ with (obj_khal)
 		break
 	}
 }
+*/

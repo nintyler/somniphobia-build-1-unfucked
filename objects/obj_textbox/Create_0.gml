@@ -8,6 +8,13 @@ txtb_img = 0;
 txtb_spr_w = 0;
 txtb_spr_h = 0;
 txtb_spd = 0.5;
+character = 0;
+
+characterspr = spr_test;
+characterspr_width = sprite_get_width(characterspr);
+characterspr_height = sprite_get_height(characterspr);
+icondistance = 128;
+
 dir = 0
 //text
 page = 0;

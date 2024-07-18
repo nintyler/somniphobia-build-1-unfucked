@@ -17,7 +17,7 @@ if (setup == false) {
 	
 	for (var i = 0; i < page_num; i++) {
 		text_length[i] = string_length(text[i][0]);
-		text_x_offest[i] = 39;
+		text_x_offest[i] = 39;	
 	}
 }
 
@@ -48,9 +48,16 @@ txtb_img += txtb_spd;
 txtb_spr_w = sprite_get_width(txtb_spr);
 txtb_spr_h = sprite_get_height(txtb_spr);
 
+var characterx_offset = box_x + text_x_offest[page] + border;
+var charactery_offset = box_y + border;
 draw_sprite_ext(txtb_spr, txtb_img, box_x + text_x_offest[page], box_y, txtb_width / txtb_spr_w, txtb_height / txtb_spr_h, 0, c_white, 1);
-
+if (character)
+     draw_sprite(characterspr, 0, characterx_offset + icondistance/2,  charactery_offset + txtb_height/2 - border)
 var _drawtext = string_copy(text[page][0], 1, type_text);
-draw_text_ext(box_x + text_x_offest[page] + border, box_y + border, _drawtext, line_sep, line_width);
+
+if !(character)
+	draw_text_ext(box_x + text_x_offest[page] + border, box_y + border, _drawtext, line_sep, line_width);
+else
+    draw_text_ext(box_x + text_x_offest[page] + border +icondistance, box_y + border, _drawtext, line_sep, line_width-icondistance);
 		
 			
